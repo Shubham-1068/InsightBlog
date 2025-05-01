@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightBlog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">Insight<span>Blog</span></a>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link active">Home</a></li>
+                        <li><a href="#" class="nav-link">Technology</a></li>
+                        <li><a href="#" class="nav-link">Design</a></li>
+                        <li><a href="#" class="nav-link">Culture</a></li>
+                        <li><a href="#" class="nav-link">About</a></li>
+                    </ul>
+                </nav>
+
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+
+                <button class="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main-content">
+                <div class="posts">
+                    <h2 class="section-title">Featured Articles</h2>
+
+                    <div class="posts-grid">
+                        <article class="post-card">
+                            <img src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="AI and Machine Learning" class="post-image">
+                            <div class="post-content">
+                                <span class="post-category">Technology</span>
+                                <h3 class="post-title">
+                                    <a href="#">The Future of AI: Beyond the Hype</a>
+                                </h3>
+                                <p class="post-excerpt">Exploring the realistic applications of artificial intelligence
+                                    beyond marketing buzzwords and science fiction.</p>
+                                <div class="post-meta">
+                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Author" class="author-avatar">
+                                    <div>
+                                        <div class="author-name">David Chen</div>
+                                    </div>
+                                    <div class="post-date">May 15, 2023</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Web Design Trends" class="post-image">
+                            <div class="post-content">
+                                <span class="post-category">Design</span>
+                                <h3 class="post-title">
+                                    <a href="#">Web Design Trends That Will Dominate 2023</a>
+                                </h3>
+                                <p class="post-excerpt">From minimalism to immersive experiences, these design trends
+                                    are reshaping the digital landscape.</p>
+                                <div class="post-meta">
+                                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Author" class="author-avatar">
+                                    <div>
+                                        <div class="author-name">Sarah Johnson</div>
+                                    </div>
+                                    <div class="post-date">May 10, 2023</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <img src="https://images.pexels.com/photos/3855618/pexels-photo-3855618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Digital Privacy" class="post-image">
+                            <div class="post-content">
+                                <span class="post-category">Culture</span>
+                                <h3 class="post-title">
+                                    <a href="#">Digital Privacy in an Age of Surveillance</a>
+                                </h3>
+                                <p class="post-excerpt">How the concept of privacy is evolving in the digital age and
+                                    what it means for our society.</p>
+                                <div class="post-meta">
+                                    <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Author" class="author-avatar">
+                                    <div>
+                                        <div class="author-name">Michael Torres</div>
+                                    </div>
+                                    <div class="post-date">May 5, 2023</div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <h2 class="section-title" style="margin-top: var(--spacing-8);">Recent Posts</h2>
+
+                    <div class="posts-grid">
+                        <article class="post-card">
+                            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Cybersecurity" class="post-image">
+                            <div class="post-content">
+                                <span class="post-category">Technology</span>
+                                <h3 class="post-title">
+                                    <a href="#">Cybersecurity Essentials for Small Businesses</a>
+                                </h3>
+                                <p class="post-excerpt">Protecting your small business from digital threats doesn't have
+                                    to be complicated or expensive.</p>
+                                <div class="post-meta">
+                                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Author" class="author-avatar">
+                                    <div>
+                                        <div class="author-name">Robert Garcia</div>
+                                    </div>
+                                    <div class="post-date">April 30, 2023</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <img src="https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Remote Work" class="post-image">
+                            <div class="post-content">
+                                <span class="post-category">Culture</span>
+                                <h3 class="post-title">
+                                    <a href="#">The Evolution of Remote Work Culture</a>
+                                </h3>
+                                <p class="post-excerpt">How companies and employees are adapting to the permanent shift
+                                    towards remote and hybrid work models.</p>
+                                <div class="post-meta">
+                                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Author" class="author-avatar">
+                                    <div>
+                                        <div class="author-name">Emily Wright</div>
+                                    </div>
+                                    <div class="post-date">April 28, 2023</div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Sustainability" class="post-image">
+                            <div class="post-content">
+                                <span class="post-category">Design</span>
+                                <h3 class="post-title">
+                                    <a href="#">Sustainable Design Principles for the Digital World</a>
+                                </h3>
+                                <p class="post-excerpt">How designers can reduce environmental impact through thoughtful
+                                    digital product design choices.</p>
+                                <div class="post-meta">
+                                    <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Author" class="author-avatar">
+                                    <div>
+                                        <div class="author-name">Jessica Taylor</div>
+                                    </div>
+                                    <div class="post-date">April 25, 2023</div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="widget">
+                        <h3 class="widget-title">Trending Now</h3>
+                        <div class="trending-posts">
+                            <div class="trending-post">
+                                <img src="https://images.pexels.com/photos/4145153/pexels-photo-4145153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Cryptocurrency" class="trending-post-image">
+                                <div>
+                                    <h4 class="trending-post-title"><a href="#">Cryptocurrency: What's Next After the
+                                            Boom and Bust</a></h4>
+                                    <div class="trending-post-date">May 12, 2023</div>
+                                </div>
+                            </div>
+                            <div class="trending-post">
+                                <img src="https://images.pexels.com/photos/3927386/pexels-photo-3927386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="AR Tech" class="trending-post-image">
+                                <div>
+                                    <h4 class="trending-post-title"><a href="#">Augmented Reality in Everyday Life</a>
+                                    </h4>
+                                    <div class="trending-post-date">May 9, 2023</div>
+                                </div>
+                            </div>
+                            <div class="trending-post">
+                                <img src="https://images.pexels.com/photos/6636091/pexels-photo-6636091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="Mental Health" class="trending-post-image">
+                                <div>
+                                    <h4 class="trending-post-title"><a href="#">Digital Well-being: Finding Balance in
+                                            the Connected Age</a></h4>
+                                    <div class="trending-post-date">May 7, 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3 class="widget-title">Popular Tags</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">Technology</a>
+                            <a href="#" class="tag">AI</a>
+                            <a href="#" class="tag">Design</a>
+                            <a href="#" class="tag">UX</a>
+                            <a href="#" class="tag">Web Development</a>
+                            <a href="#" class="tag">Culture</a>
+                            <a href="#" class="tag">Work</a>
+                            <a href="#" class="tag">Cybersecurity</a>
+                            <a href="#" class="tag">Privacy</a>
+                            <a href="#" class="tag">Future</a>
+                            <a href="#" class="tag">Sustainability</a>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3 class="widget-title">About InsightBlog</h3>
+                        <p>InsightBlog explores the intersection of technology, design, and culture. We provide
+                            thoughtful analysis and practical insights for the digital age.</p>
+                        <a href="#" style="display: inline-block; margin-top: var(--spacing-2);">Learn more →</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-inner">
+                <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+                <p class="newsletter-description">Get the latest insights delivered directly to your inbox. No spam,
+                    just valuable content.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address">
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-column">
+                    <div class="footer-logo">Insight<span style="color: var(--primary);">Blog</span></div>
+                    <p class="footer-description">Exploring technology, design, and culture in the digital age.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-links-title">Explore</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">Home</a></li>
+                        <li class="footer-link"><a href="#">Technology</a></li>
+                        <li class="footer-link"><a href="#">Design</a></li>
+                        <li class="footer-link"><a href="#">Culture</a></li>
+                        <li class="footer-link"><a href="#">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-links-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">Getting Started</a></li>
+                        <li class="footer-link"><a href="#">Style Guide</a></li>
+                        <li class="footer-link"><a href="#">Newsletters</a></li>
+                        <li class="footer-link"><a href="#">Authors</a></li>
+                        <li class="footer-link"><a href="#">Tags</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-links-title">Company</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="#">About Us</a></li>
+                        <li class="footer-link"><a href="#">Contact</a></li>
+                        <li class="footer-link"><a href="#">Careers</a></li>
+                        <li class="footer-link"><a href="#">Advertise</a></li>
+                        <li class="footer-link"><a href="#">Terms & Policies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2023 InsightBlog. All rights reserved.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', function () {
+                    nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+                });
+            }
+            const searchInput = document.querySelector('.search-input');
+            if (searchInput) {
+                searchInput.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        alert('Search functionality is disabled in this demo.');
+                    }
+                });
+            }
+
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    alert('Newsletter subscription is disabled in this demo.');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
