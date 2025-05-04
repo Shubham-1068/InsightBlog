@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberPulse - Sitemap</title>
+  <style>
+    :root {
+      --primary: #00b4d8;
+      --primary-dark: #0096c7;
+      --secondary: #64748b;
+      --accent: #ff4d6d;
+      --success: #2ea44f;
+      --warning: #f59e0b;
+      --error: #dc2626;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--gray-800);
+      background: var(--light);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .header {
+      background: var(--dark);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--gray-300);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      background: var(--gray-900);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: var(--gray-400);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .main {
+      padding: 4rem 0;
+    }
+
+    .sitemap-section {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    .sitemap-section h2 {
+      color: var(--gray-900);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--gray-200);
+    }
+
+    .sitemap-list {
+      list-style: none;
+      columns: 2;
+      column-gap: 2rem;
+    }
+
+    .sitemap-list li {
+      margin-bottom: 1rem;
+      break-inside: avoid;
+    }
+
+    .sitemap-list a {
+      color: var(--gray-700);
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.5rem;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+
+    .sitemap-list a:hover {
+      color: var(--primary);
+      background: var(--gray-100);
+    }
+
+    .footer {
+      background: var(--gray-900);
+      color: var(--gray-400);
+      padding: 4rem 0;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer a {
+      color: var(--gray-400);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer a:hover {
+      color: var(--primary);
+    }
+
+    .hidden-flag {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      
+      .sitemap-list {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="#" class="logo">CyberPulse</a>
+      <div class="nav-links">
+        <a href="#">Threats</a>
+        <a href="#">Vulnerabilities</a>
+        <a href="#">Research</a>
+        <a href="#">Tools</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Sitemap</h1>
+      <p>Complete overview of our website structure and content organization.</p>
+    </div>
+  </section>
+
+  <main class="main container">
+    <div class="sitemap-section">
+      <h2>Main Sections</h2>
+      <ul class="sitemap-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workshop.html">Security Workshops</a></li>
+        <li><a href="trap.html">Honeypot Research</a></li>
+        <li><a href="testing.html">Security Testing Lab</a></li>
+        <li><a href="flag.html">Flag Submission</a></li>
+        <li><a href="done.html">Challenge Complete</a></li>
+        <li><a href="zipfiles.html">Resources</a></li>
+        <li><a href="zip.html">Downloads</a></li>
+      </ul>
+    </div>
+
+    <div class="sitemap-section">
+      <h2>Resources</h2>
+      <ul class="sitemap-list">
+        <li><a href="#">Latest Threats</a></li>
+        <li><a href="#">Vulnerability Database</a></li>
+        <li><a href="#">Research Papers</a></li>
+        <li><a href="#">Security Tools</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">API Reference</a></li>
+        <li><a href="#">Knowledge Base</a></li>
+        <li><a href="#">Support Center</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>About CyberPulse</h4>
+        <p>Your trusted source for cybersecurity news, threat intelligence, and security research.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Latest Threats</a></li>
+          <li><a href="#">Vulnerability Database</a></li>
+          <li><a href="#">Research Papers</a></li>
+          <li><a href="#">Security Tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="hidden-flag">
+    FLAG{sitemap_enumeration_complete}
+  </div>
+</body>
+</html>

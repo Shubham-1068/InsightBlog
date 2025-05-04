@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberPulse - Security Workshops</title>
+  <style>
+    :root {
+      --primary: #00b4d8;
+      --primary-dark: #0096c7;
+      --secondary: #64748b;
+      --accent: #ff4d6d;
+      --success: #2ea44f;
+      --warning: #f59e0b;
+      --error: #dc2626;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--gray-800);
+      background: var(--light);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .header {
+      background: var(--dark);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--gray-300);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      background: var(--gray-900);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: var(--gray-400);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .main {
+      padding: 4rem 0;
+    }
+
+    .workshop-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .workshop-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .workshop-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .workshop-content {
+      padding: 1.5rem;
+    }
+
+    .workshop-date {
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .workshop-title {
+      font-size: 1.25rem;
+      color: var(--gray-900);
+      margin-bottom: 1rem;
+    }
+
+    .workshop-description {
+      color: var(--gray-600);
+      margin-bottom: 1rem;
+    }
+
+    .workshop-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--gray-500);
+      font-size: 0.875rem;
+    }
+
+    .footer {
+      background: var(--gray-900);
+      color: var(--gray-400);
+      padding: 4rem 0;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer a {
+      color: var(--gray-400);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer a:hover {
+      color: var(--primary);
+    }
+
+    .hidden-flag {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="#" class="logo">CyberPulse</a>
+      <div class="nav-links">
+        <a href="#">Threats</a>
+        <a href="#">Vulnerabilities</a>
+        <a href="#">Research</a>
+        <a href="#">Tools</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Security Training Workshops</h1>
+      <p>Enhance your cybersecurity skills with hands-on workshops led by industry experts.</p>
+    </div>
+  </section>
+
+  <main class="main container">
+    <div class="workshop-grid">
+      <div class="workshop-card">
+        <div class="workshop-content">
+          <div class="workshop-date">June 15, 2023</div>
+          <h3 class="workshop-title">Advanced Malware Analysis</h3>
+          <p class="workshop-description">Learn reverse engineering techniques and analyze sophisticated malware samples in our hands-on lab.</p>
+          <div class="workshop-meta">
+            <span>Duration: 4 hours</span>
+            <span>Level: Advanced</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="workshop-card">
+        <div class="workshop-content">
+          <div class="workshop-date">June 20, 2023</div>
+          <h3 class="workshop-title">Web Application Security</h3>
+          <p class="workshop-description">Master OWASP Top 10 vulnerabilities and learn secure coding practices through practical exercises.</p>
+          <div class="workshop-meta">
+            <span>Duration: 6 hours</span>
+            <span>Level: Intermediate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="workshop-card">
+        <div class="workshop-content">
+          <div class="workshop-date">June 25, 2023</div>
+          <h3 class="workshop-title">Network Penetration Testing</h3>
+          <p class="workshop-description">Conduct network assessments and exploit vulnerabilities in a controlled environment.</p>
+          <div class="workshop-meta">
+            <span>Duration: 8 hours</span>
+            <span>Level: Expert</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>About CyberPulse</h4>
+        <p>Your trusted source for cybersecurity news, threat intelligence, and security research.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Latest Threats</a></li>
+          <li><a href="#">Vulnerability Database</a></li>
+          <li><a href="#">Research Papers</a></li>
+          <li><a href="#">Security Tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="hidden-flag">
+    FLAG{security_training_unlocked}
+  </div>
+</body>
+</html>

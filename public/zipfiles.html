@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberPulse - Resource Files</title>
+  <style>
+    :root {
+      --primary: #00b4d8;
+      --primary-dark: #0096c7;
+      --secondary: #64748b;
+      --accent: #ff4d6d;
+      --success: #2ea44f;
+      --warning: #f59e0b;
+      --error: #dc2626;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--gray-800);
+      background: var(--light);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .header {
+      background: var(--dark);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--gray-300);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      background: var(--gray-900);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: var(--gray-400);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .main {
+      padding: 4rem 0;
+    }
+
+    .files-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .file-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .file-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .file-content {
+      padding: 1.5rem;
+    }
+
+    .file-type {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+    }
+
+    .file-name {
+      font-size: 1.25rem;
+      color: var(--gray-900);
+      margin-bottom: 1rem;
+    }
+
+    .file-description {
+      color: var(--gray-600);
+      margin-bottom: 1.5rem;
+    }
+
+    .file-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--gray-500);
+      font-size: 0.875rem;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--success);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .download-btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .footer {
+      background: var(--gray-900);
+      color: var(--gray-400);
+      padding: 4rem 0;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer a {
+      color: var(--gray-400);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer a:hover {
+      color: var(--primary);
+    }
+
+    .hidden-flag {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="#" class="logo">CyberPulse</a>
+      <div class="nav-links">
+        <a href="#">Threats</a>
+        <a href="#">Vulnerabilities</a>
+        <a href="#">Research</a>
+        <a href="#">Tools</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Resource Files</h1>
+      <p>Download security research materials and tools for your analysis.</p>
+    </div>
+  </section>
+
+  <main class="main container">
+    <div class="files-grid">
+      <div class="file-card">
+        <div class="file-content">
+          <span class="file-type">Research Paper</span>
+          <h3 class="file-name">APT Analysis Report.pdf</h3>
+          <p class="file-description">Detailed analysis of recent APT group activities and their tactics.</p>
+          <div class="file-meta">
+            <span>Size: 2.4 MB</span>
+            <a href="#" class="download-btn">Download</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="file-card">
+        <div class="file-content">
+          <span class="file-type">Dataset</span>
+          <h3 class="file-name">Malware Signatures.zip</h3>
+          <p class="file-description">Collection of malware signatures for threat detection.</p>
+          <div class="file-meta">
+            <span>Size: 5.1 MB</span>
+            <a href="#" class="download-btn">Download</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="file-card">
+        <div class="file-content">
+          <span class="file-type">Tool</span>
+          <h3 class="file-name">Security Scanner.py</h3>
+          <p class="file-description">Python script for automated security assessment.</p>
+          <div class="file-meta">
+            <span>Size: 156 KB</span>
+            <a href="#" class="download-btn">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>About CyberPulse</h4>
+        <p>Your trusted source for cybersecurity news, threat intelligence, and security research.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Latest Threats</a></li>
+          <li><a href="#">Vulnerability Database</a></li>
+          <li><a href="#">Research Papers</a></li>
+          <li><a href="#">Security Tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="hidden-flag">
+    FLAG{resource_files_accessed}
+  </div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberPulse - Honeypot Research</title>
+  <style>
+    :root {
+      --primary: #00b4d8;
+      --primary-dark: #0096c7;
+      --secondary: #64748b;
+      --accent: #ff4d6d;
+      --success: #2ea44f;
+      --warning: #f59e0b;
+      --error: #dc2626;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--gray-800);
+      background: var(--light);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .header {
+      background: var(--dark);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: var(--gray-300);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      background: var(--gray-900);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      color: var(--gray-400);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .main {
+      padding: 4rem 0;
+    }
+
+    .research-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .research-section {
+      margin-bottom: 2rem;
+    }
+
+    .research-section h2 {
+      color: var(--gray-900);
+      margin-bottom: 1rem;
+    }
+
+    .research-section p {
+      color: var(--gray-600);
+      margin-bottom: 1rem;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 0.75rem;
+      border: 1px solid var(--gray-200);
+    }
+
+    .data-table th {
+      background: var(--gray-100);
+      text-align: left;
+    }
+
+    .footer {
+      background: var(--gray-900);
+      color: var(--gray-400);
+      padding: 4rem 0;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer h4 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer a {
+      color: var(--gray-400);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer a:hover {
+      color: var(--primary);
+    }
+
+    .hidden-flag {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="container nav">
+      <a href="#" class="logo">CyberPulse</a>
+      <div class="nav-links">
+        <a href="#">Threats</a>
+        <a href="#">Vulnerabilities</a>
+        <a href="#">Research</a>
+        <a href="#">Tools</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Honeypot Research Findings</h1>
+      <p>Analysis of attacker behavior and techniques observed in our global honeypot network.</p>
+    </div>
+  </section>
+
+  <main class="main container">
+    <div class="research-content">
+      <div class="research-section">
+        <h2>Attack Patterns Analysis</h2>
+        <p>Our honeypot network detected significant patterns in attacker behavior over the past month. The most common attack vectors included SSH brute force attempts, RDP exploitation, and web application scanning.</p>
+        
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Attack Type</th>
+              <th>Frequency</th>
+              <th>Success Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SSH Brute Force</td>
+              <td>45%</td>
+              <td>0.1%</td>
+            </tr>
+            <tr>
+              <td>RDP Exploitation</td>
+              <td>30%</td>
+              <td>0.2%</td>
+            </tr>
+            <tr>
+              <td>Web App Scanning</td>
+              <td>25%</td>
+              <td>1.5%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="research-section">
+        <h2>Geographic Distribution</h2>
+        <p>Attacks originated primarily from the following regions, with varying levels of sophistication and persistence.</p>
+        
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Region</th>
+              <th>Attack Volume</th>
+              <th>Sophistication Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Eastern Europe</td>
+              <td>35%</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>Southeast Asia</td>
+              <td>28%</td>
+              <td>Medium</td>
+            </tr>
+            <tr>
+              <td>North America</td>
+              <td>22%</td>
+              <td>High</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>About CyberPulse</h4>
+        <p>Your trusted source for cybersecurity news, threat intelligence, and security research.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Latest Threats</a></li>
+          <li><a href="#">Vulnerability Database</a></li>
+          <li><a href="#">Research Papers</a></li>
+          <li><a href="#">Security Tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="hidden-flag">
+    FLAG{honeypot_research_accessed}
+  </div>
+</body>
+</html>
